@@ -24,7 +24,7 @@ setInterval(() => {
     let m = new Date().getMinutes();
     let s = new Date().getSeconds();
 
-    let am = h <= 12 ? 'PM' : 'AM';
+    let am = h <= 12 ? 'AM' : 'PM';
     h = h >= 12 ? h : h - 12;
 
 
