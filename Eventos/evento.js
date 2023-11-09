@@ -6,6 +6,17 @@ const fechaEvento = document.querySelector("#fechaEvento")
 const botnAgregar = document.querySelector("#agregar")
 const listaEventos = document.querySelector("#listaEventos")
 
+const json = cargar();
+
+try {
+    arr = JSON.parse(json);
+}catch (error) {
+    arr = [];
+}
+eventos = arr? [...arr] : [];
+
+mostrarEventos();
+
 document.querySelector("form").addEventListener("submit", e => {
     e.preventDefault();
     agregarEvento();
@@ -25,6 +36,8 @@ function agregarEvento() {
     };
 
     eventos.unshift(nuevoEvento);
+
+    guardar(JSON.stringify(eventos));
 
     nombreEvento.value = "";
 
@@ -62,8 +75,14 @@ function mostrarEventos() {
         button.addEventListener("click", e => {
             const id = button.getAttribute('data-id');
             eventos = eventos.filter(evento => evento.id !== id);
-
+            guardar(JSON.stringify(eventos));
             mostrarEventos();
         });
     });
+}
+function guardar(datos){
+    localStorage.setItem("lista", datos);
+}
+function cargar(){
+    return localStorage.getItem("lista")
 }

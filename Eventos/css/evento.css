@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to top, #29aaf5da, #4651f3);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center bottom;
+}
+
+.principal_imagen {
+    display: flex;
+    justify-content: space-around;
+}
+
+.principal_imagen h2 {
+    margin-top: 10px;
+}
+
+.imagen {
+    width: 50px;
+    margin-left: 20px;
+}
+
+.eventos {
+    border-radius: 20px;
+    margin: 20px 20px;
+    padding: 25px;
+    width: 45vh;
+    background-color: rgb(144, 81, 247);
+    box-shadow: inset 0px 0px 20px 5px black;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario input {
+    border: 1px solid rgb(182, 173, 230);
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    margin: 5px;
+    height: 30px;
+}
+
+.formulario #agregar {
+    background-color: rgb(52, 231, 91);
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    margin-top: 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+#agregar:hover {
+    background: rgb(212, 0, 255);
+}
+
+.derechosAutor a {
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.listaEventos2{
+    border: 2px solid rgb(206, 15, 224);
+    border-radius: 10px;
+    display: auto;
+    box-shadow: inset 0px 0px 20px 5px rgb(82, 6, 53);
+}
+
+.evento {
+    display: auto;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    border: 2px solid rgb(17, 100, 52);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    width: 600px;
+}
+
+.dias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.diasFaltantes {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.nombreEvento {
+    width: 100px;
+    height: 50px;
+    overflow: auto;
+}
+
+.eliminar {
+    border: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background: #39ff76;
+    cursor: pointer;
+}
+
+.eliminar:hover {
+    background: red;
+}
