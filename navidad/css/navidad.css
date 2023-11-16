@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    pad: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 150px;
+    height: 35px;
+    background-color: rgb(3, 200, 220);
+    border-radius: 1vh;
+    border: 0.2rem solid rgb(6, 106, 198) ;
+    margin-bottom: 2rem;
+    position: fixed;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
