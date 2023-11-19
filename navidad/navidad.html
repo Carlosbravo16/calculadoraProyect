@@ -1,31 +1,51 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="./css/navidad.css">
+    <title>Dias para Navidad</title>
 </head>
+
 <body>
-    <div id="cuentaRegresiva">
-        <div class="pantalla">
-            <span class="dia">d</span>
-            <span class="separador">:</span>
-            <span class="hora">h</span>
-            <span class="separador">:</span>
-            <span class="minuto">m</span>
-            <span class="separador">:</span>
-            <span class="segundo">s</span>
-          
+    <div class="navidad">
+        <div class="cont">
+            <div class="titulo1">
+                <h1 id="tituloantes">Falta para Navidad</h1>
+                <h1 id="titulo"></h1>
+
+            </div>
+            <div class="estilo">
+                <div class="campo" id="dias"></div>
+                <div class="campo" id="horas"></div>
+                <div class="campo" id="minutos"></div>
+                <div class="campo" id="segundos"></div><br>
+
+                <div class="titulos">
+                    <span class="di">D</span>
+                    <span class="di">H</span>
+                    <span class="di">M</span>
+                    <span class="di">S</span>
+                </div>
+               
+                <audio src="./sound/sonido.mp3"></audio>
+
+
+
+                <div id="play" onclick="bailar()">play</div>
+                <div id="pause" onclick="nobailar()">pause</div>
+            </div>
         </div>
-        <div class="botones">
-            <button class="iniciar"><i class="fa-solid fa-play"></i></button>
-            <button class="detener"><i class="fa-solid fa-stop"></i></button>
+        <div class="contBaile">
+            <div class="papaOff" id="baileOff">
+            </div>
         </div>
+        <script src="./navidad.js"></script>
     </div>
-   
-
-
-    <script src="./navidad.js"></script>
 </body>
+
+
 </html>
+   
